@@ -137,7 +137,7 @@ KEY_STATE key_map[]={
 
 	{"3",	KEY_3,					0,	KROW_P0_0,	KROW_P1_2},  //
 	{"Y"	,	KEY_Y,					0,	KROW_P0_1,	KROW_P1_2},  //
-	{"TAB"	,	KEY_TAB,				0,	KROW_P0_2,	KROW_P1_2},  //
+	{"CTRL"	,	KEY_LEFTCTRL,				0,	KROW_P0_2,	KROW_P1_2},  //
 	{"N"	,	KEY_N,					0,	KROW_P0_3,	KROW_P1_2}, //
 	{"M"	,	KEY_M,					0,	KROW_P0_4,	KROW_P1_2}, //
 	{"PGDN"	,	KEY_DOWN/*KEY_PAGEDOWN*/,					0,	KROW_P0_5,	KROW_P1_2}, //
@@ -149,7 +149,7 @@ KEY_STATE key_map[]={
 	{"F"	,	KEY_F,				0,	KROW_P0_2,	KROW_P1_3},  //
 	{"X"	,	KEY_X,					0,	KROW_P0_3,	KROW_P1_3}, //
 	{"FN"	,	KEY_FN,					0,	KROW_P0_4,	KROW_P1_3}, //
-	{"SHIFT-R"	,	KEY_RIGHTSHIFT,					0,	KROW_P0_5,	KROW_P1_3}, //
+	{";"	,	KEY_SEMICOLON,					0,	KROW_P0_5,	KROW_P1_3}, //
 	{"P"	,	KEY_P,					0,	KROW_P0_6,	KROW_P1_3},  //
 	{"NULL"	,	KEY_UNKNOWN,					0,	KROW_P0_7,	KROW_P1_3},  //
 
@@ -175,7 +175,7 @@ KEY_STATE key_map[]={
 	{"R"	,	KEY_R,					0,	KROW_P0_1,	KROW_P1_6},   //
 	{"H",	KEY_H,					0,	KROW_P0_2,	KROW_P1_6},  //
 	{"SHIFT-L"	,	KEY_LEFTSHIFT,					0,	KROW_P0_3,	KROW_P1_6},   //
-	{"CTRL"	,	KEY_LEFTCTRL,					0,	KROW_P0_4,	KROW_P1_6},  //
+	{"TAB"	,	KEY_TAB,					0,	KROW_P0_4,	KROW_P1_6},  //
 	{"L"	,	KEY_L,					0,	KROW_P0_5,	KROW_P1_6},  //
 	{"0"	,	KEY_0,					0,	KROW_P0_6,	KROW_P1_6},  //
 	{"NULL"	,	KEY_UNKNOWN,					0,	KROW_P0_7,	KROW_P1_6},  //
@@ -856,7 +856,7 @@ static void aw9523_input_register(void)
 	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_APOSTROPHE);
 	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_LEFT);
 	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_DOWN/*KEY_PAGEDOWN*/);
-	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_RIGHTSHIFT);
+	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_SEMICOLON);
 	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_UP/*KEY_PAGEUP*/);
 	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_RIGHT);
 	input_set_capability(aw9523_key->input_dev, EV_KEY, KEY_L);
